@@ -6,8 +6,8 @@ module Sinatra
 
       def client
         OAuth2::Client.new(
-          settings.application_id,
-          settings.secret,
+          settings.application_id, '75678e2d7c679885e0c3595d611e1eed393d70cf664b44e56d25f7c3f6cd7178'
+          settings.secret, '8d07fb1215a209f4a8c8dbf38e5a810ee0745dc048ef0e75f3404356abd27150'
           :site => settings.site_url,
           :token_method => :post,
         )
